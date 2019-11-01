@@ -15,6 +15,8 @@ if (process.argv[2]) {
 			  	   break
 		case '-e': mode = 'edit'
 			  	   break
+		default: console.log('Unidentified options')
+				 return
 	}
 
 	title = process.argv[3]
