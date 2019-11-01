@@ -6,7 +6,9 @@ Requirement - environment variable HOME must be set. Sublime text should be inst
 Installation - npm install -g notes
 
 Run - note -l (List all notes in notes folder)
+
 All note files are created with .txt extension
+
 By default notes folder will be created in HOME folder
 
 Options
