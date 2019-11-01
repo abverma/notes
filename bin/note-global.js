@@ -15,10 +15,6 @@ if (process.argv[2]) {
 			  	   break
 		case '-e': mode = 'edit'
 			  	   break
-		case '-S': mode = 'sync'
-			  	   break
-		case '-Sa': mode = 'syncall'
-			   		break
 	}
 
 	title = process.argv[3]

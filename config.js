@@ -1,0 +1,1 @@
+exports.destination_folder = ''
