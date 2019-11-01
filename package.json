@@ -1,0 +1,16 @@
+{
+  "name": "note",
+  "version": "1.0.0",
+  "description": "Command line utility for notes",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+      "note": "./bin/note-global.js"
+  },
+  "preferGlobal": true,
+  "keywords": [],
+  "author": "abhishek",
+  "license": "ISC"
+}
