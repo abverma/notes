@@ -7,10 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-      "note": "./bin/note-global.js"
+    "note": "./bin/note-global.js"
   },
   "preferGlobal": true,
   "keywords": [],
   "author": "abhishek",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.3.1"
+  }
 }

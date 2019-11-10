@@ -17,4 +17,4 @@ Options
 -a Append (node -a title note)
 -e Edit (node -e title)
 -s Contains Search (node -s title)
-
+-h Help

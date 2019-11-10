@@ -1,6 +1,20 @@
 #!/usr/bin/env node
 
-const handler = require('../lib/index.js')
+const fs = require('fs'),
+	  handler = require('../lib/index.js'),
+	  readMeFilePath = './README.md'
+
+const printHelp = () => {
+	try {
+		let contents = fs.readFileSync(readMeFilePath, 'utf-8')
+		console.log(contents)
+	}
+	catch(e) {
+		console.log(e)
+		console.log('Can not file README.md file.')
+	}
+
+}
 
 if (process.argv[2]) {
 
@@ -15,6 +29,10 @@ if (process.argv[2]) {
 			  	   break
 		case '-e': mode = 'edit'
 			  	   break
+		case '-h': printHelp()
+				   return 
+		case '-r': mode = 'read'
+				   break 
 		default: console.log('Unidentified options')
 				 return
 	}
@@ -24,3 +42,4 @@ if (process.argv[2]) {
 
 	handler.handleRequest(mode, title, note)
 }
+
